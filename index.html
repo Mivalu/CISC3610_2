@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plot Sin Wave</title>
+<script src="script.js"></script>
+</head>
+<body>
+<div id="gameArea">
+    <canvas id="canvas" width="500" height="350" style="border:1px solid #000000;"></canvas>
+</div>
+    
+    <form name="data">
+		<br>
+		<fieldset>
+			<legend>Select A Function</legend>
+			
+			<input type="radio" name="fun" value="fun1">Function 1</input><br>
+			<input type="radio" name="fun" value="fun2">Function 2</input><br>
+			<input type="radio" name="fun" value="fun3">Function 3</input><br>
+			<input type="radio" name="fun" value="selfun">Select Function</input>
+			<select name="choices">
+				<option value="val1">Sin X</option>
+				<option value="val2">Cos X</option>
+				<option value="val3">Mx + b</option>
+			</select><br>
+			<input type="radio" name="fun" value="manfun">Enter Manual Function</input>
+			<input type="text" name="formula" placeholder="Formula" /> <br>
+			
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Submit Formula</legend>
+			<input type="text" name="title" placeholder="Title" /><br>
+			<input type="text" name="xax" placeholder="X Axis" /><br>
+			<input type="text" name="yax" placeholder="Y Axis" /><br>
+			<button>Reset</button>
+			<input type="button" value="Plot"/ onClick="init();">
+		</fieldset>
+    </form>
+</body>
+</html>

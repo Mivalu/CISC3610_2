@@ -59,6 +59,8 @@ function draw() {
 	ctx.fillStyle="#999999";
 	ctx.font = "20px Helvetica";
 	ctx.fillText(title[0].value, 5, 20);
+	ctx.fillText(xax[0].value,5, canvas.height/2-10);
+	ctx.fillText(yax[0].value,canvas.width/2+5,20);
 	//draw a function
 	for (var i=0;i<options.length;i++){
 		if (options[i].value === "fun1" && options[i].checked) {

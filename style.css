@@ -50,6 +50,10 @@ html, body {
 	top: 100px;
 	width: 80%;
 }
+#gameArea{
+	position: absolute;;
+	top: 40px;
+}
 .bottom {
 	font-family: Helvetica,Verdana;
 	font-size: 10pt;

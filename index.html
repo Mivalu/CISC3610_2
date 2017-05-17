@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	
 
 	<title>CISC 3610 Assignment 2</title>
 </head>
@@ -30,13 +30,13 @@
 			<input type="radio" name="fun" value="fun2">y = (x+2)(x+4)</input><br>
 			<input type="radio" name="fun" value="fun3">y = 4</input><br>
 			<input type="radio" name="fun" value="selfun">Select Function</input>
-			<select name="choices">
-				<option value="val1">Sin X</option>
-				<option value="val2">Cos X</option>
-				<option value="val3">Mx + b</option>
-			</select><br>
+			<select id="choices">
+				<option value="val1">C * Sin 2X</option>
+				<option value="val2">C * Log X</option>
+				<option value="val3">x ^ c</option>
+			</select> <input type="text" id="myconst" placeholder="Constant Value" /><br>
 			<input type="radio" name="fun" value="manfun">Enter Manual Function</input>
-			<input type="text" name="formula" placeholder="Formula" /> <br>
+			<input type="text" id="manformula" name="formula" placeholder="Formula" /> <br>
 			
 		</fieldset>
 		<br>
@@ -51,5 +51,6 @@
 		</fieldset>
     </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

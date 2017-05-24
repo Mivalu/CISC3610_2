@@ -9,6 +9,7 @@ var title = document.getElementsByName('title');
 var choice = document.getElementById('choices');
 var xax = document.getElementsByName('xax');
 var yax = document.getElementsByName('yax')
+var myequation = document.getElementById("manformula");
 
 function init(){
 	//initalizes the canvas
@@ -170,31 +171,14 @@ function fun6(){
 
 function fun7(){
 	// take in string value and interpret
-}
+	console.log(myequation.value);
+	ctx.beginPath();
+	ctx.strokeStyle = "#FF0000";
 
-/*
-
-function update() {
-}
-
-function draw() {
-
-
-	// Draw Graph
-	canvasContext.save();
-    plotEquation();
-	canvasContext.restore();
-
-}
-
-function plotEquation() {
-
-	canvasContext.strokeStyle="#FF0000";
-	
-	canvasContext.beginPath();
-    canvasContext.translate(canvas.width/2,(canvas.height+jump)/2-offset);
-	for (var x = -canvas.width/2; x <= canvas.width; x += jump) {
-        canvasContext.lineTo(x, eval(document.data.equation.value));
+	ctx.translate(canvas.width/2,canvas.height/2);
+	for (var x = -canvas.width/2; x <= canvas.width/2; x += jump) {
+        ctx.lineTo(x, -eval(myequation.value));
     }
-	canvasContext.stroke();		
-}*/
+	ctx.stroke();	
+	console.log("Graphed custom function.")
+}
